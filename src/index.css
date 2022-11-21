@@ -162,6 +162,13 @@
 
 .counterTitle {
   color: #1c5bd9;
+  padding-top: 30px;
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.counterText {
+  padding-bottom: 20px;
 }
 
 .treatmentPageSection {
@@ -215,8 +222,8 @@
   display: block;
   margin: 12px;
 }
-.drsaravanan {
-  height: 27px;
+.docName {
+  height: 50px;
   width: 160px;
   font-family: 'Montserrat';
   font-size: 22px;
@@ -261,7 +268,7 @@
   position: relative;
 }
 .doc001 {
-  width: 20%;
+  width: 15%;
 }
 .doc002 {
   width: 20%;
@@ -289,7 +296,7 @@
   background: #eceff1;
   border-radius: 6px;
   margin-top: 34px;
-  padding-top: 12px;
+  padding-top: 6px;
 }
 .wosbtn {
   display: none;
@@ -303,18 +310,20 @@
 }
 .grybox2 {
   font-family: 'Montserrat';
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   margin: 12px;
   display: block;
 }
 .docabouthome > span {
-  height: 20px;
+  height: 40px;
   width: 346px;
   font-family: 'Montserrat';
   font-size: 13px;
   font-weight: 500;
   color: #333333;
+  position: relative;
+  right: 130px;
 }
 .docabouthome > img {
   width: 18px;
@@ -438,6 +447,11 @@
   transform-origin: center center;
 }
 
+.robotIcon {
+  bottom: 10px;
+  position: relative;
+}
+
 @keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -455,3 +469,4 @@
     transform: rotate(-360deg);
   }
 }
+

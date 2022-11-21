@@ -1,6 +1,7 @@
 import React from 'react';
-import { BsFillStarFill, BsStar } from 'react-icons/bs';
+import { BsFillStarFill, BsStar, BsPlayBtn } from 'react-icons/bs';
 import { BiRupee } from 'react-icons/bi';
+import '../../styles/doctor.css';
 
 const DoctorcoursesVideo = () => {
   return (
@@ -15,6 +16,7 @@ const DoctorcoursesVideo = () => {
           </div>
         </div>
         <div className="row justify-content-center">
+
           <div className="col col-md-5 my-3">
             <div className="card">
               <img
@@ -25,7 +27,7 @@ const DoctorcoursesVideo = () => {
               <div className="card-body">
                 <div className="d-flex">
                   <span>
-                    <BsFillStarFill color="#FEB422" />
+                    <BsFillStarFill color="#FEB422" className="DrimgStar" />
                   </span>
                   <p className="p-1">4.2</p>
                 </div>
@@ -35,24 +37,25 @@ const DoctorcoursesVideo = () => {
                   </h5>
                 </div>
                 <p>
-                  Low Testosterone Causes and Ways to Increase Testosterone
+                  Tips to Increase the Low Testosterone Causes and Ways to Increase Testosterone
                   Levels...
                 </p>
                 <div className="d-flex justify-content-between">
-                  <p>By Henry King</p>
-                  <p>124 read this</p>
+                  <p className="courseAuthor">By Henry King</p>
+                  <p className="courseReadBtn">124 read this</p>
                 </div>
                 <hr />
-                <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between buyNowText">
                   <a href="#">
                     <p>
-                      Read More<span>{'>'}</span>
+                      Read More<span className="buyNowImageArrow">{'>'}</span>
                     </p>
                   </a>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="col col-md-5 my-3">
             <div className="card">
               <img
@@ -63,26 +66,26 @@ const DoctorcoursesVideo = () => {
               <div className="card-body">
                 <div className="d-flex">
                   <span>
-                    <BsFillStarFill color="#FEB422" />
+                    <BsFillStarFill color="#FEB422" className="DrimgStar"/>
                   </span>
                   <p className="p-1">4.2</p>
                 </div>
-                <div className="card-title text-truncate">
-                  <h5 className="fw-bolder">Limit Your Alcohol Consumption</h5>
+                <div className="card-title">
+                  <h5 className="fw-bolder text-truncate">Limit Your Alcohol Consumption</h5>
                 </div>
                 <p>
                   Oriental Sexual Knowledge: The importance of Love and its
                   interrelati..
                 </p>
                 <div className="d-flex justify-content-between">
-                  <p>By Henry King</p>
-                  <p>124 read this</p>
+                  <p className="courseAuthor">By Henry King</p>
+                  <p className="courseReadBtn">124 read this</p>
                 </div>
                 <hr />
-                <div className="d-flex justify-content-between">
+                <div className="d-flex justify-content-between buyNowText">
                   <a href="#">
                     <p>
-                      Read More<span>{'>'}</span>
+                      Read More<span className="buyNowImageArrow">{'>'}</span>
                     </p>
                   </a>
                 </div>

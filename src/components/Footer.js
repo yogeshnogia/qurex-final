@@ -1,7 +1,8 @@
 import React from 'react';
 import footerPng from '../assets/footer.png';
 import {AiFillAndroid,AiFillApple} from 'react-icons/ai';
-import {FiFacebook,FiInstagram,FiTwitter,FiYoutube} from 'react-icons/fi'
+import {FiFacebook,FiInstagram,FiTwitter,FiYoutube} from 'react-icons/fi';
+import '../styles/home.css';
 
 const Footer = () => {
   return (
@@ -13,8 +14,8 @@ const Footer = () => {
                     <div className="col">
                         <h3>Quick Links</h3>
                         <ul className='list-unstyled'>
-                            <li>sexual issues treated</li>
-                            <li>our sexologist</li>
+                            <li>Sexual issues treated</li>
+                            <li>Our sexologist</li>
                             <li>Blogs</li>
                             <li>FAQ's</li>
                             <li>About-us</li>
@@ -24,16 +25,16 @@ const Footer = () => {
                         <h3>Policies</h3>
                         <ul className='list-unstyled'>
                             <li>Refund & cancellation policy</li>
-                            <li>privacy policy</li>
-                            <li>terms of use</li>
+                            <li>Privacy policy</li>
+                            <li>Terms of use</li>
                         </ul>
                     </div>
                     <div className="col">
                         <h3>Contact</h3>
                         <ul className='list-unstyled'>
                             <li>Constact@qurex.ai</li>
-                            <li>chat with us</li>
-                            <li>phone number</li>
+                            <li>Chat with us</li>
+                            <li>Phone number</li>
                         </ul>
                     </div>
                 </div>

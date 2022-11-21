@@ -1,7 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
+import globe from '../../assets/globe.png';
 //import feedbackQuote from '../../assets/svgs/feedbackQuote.svg';
 import feedback1 from '../../assets/pngs/feedback1.png';
+import doubleQuotes from '../../assets/svgs/doubleQuotes.svg';
 
 const FeedBack = () => {
   var settings = {
@@ -61,6 +63,40 @@ const FeedBack = () => {
             <div className="col-12 position-relative">
               <div className="feedBackCircle">
                 {/* <img src={feedbackQuote}/> */}
+                {/* <img className="quoteImage" src={globe}/> */}
+                <img className="quoteImage" src={doubleQuotes}/>
+              </div>
+              <div className="feedbackContainer">
+                <p className="feedBackTitle">Very helpful.</p>
+                <p className="feedBackParagraph">
+                  Far easier than doing same things on computer. Allows quick
+                  and easy search with speedy booking. Even maintains history of
+                  doctors visited
+                </p>
+                <div className="mx-3 dividerContianer">
+                  <hr />
+                </div>
+                <div className="d-flex ms-3 PatientData">
+                  <div className="feedbackPaitentImage">
+                    <img className="mx-auto rounded-circle" src={feedback1} />
+                  </div>
+                  <div>
+                    <p className="feedbackPaitentName">Indhuja</p>
+                    <p className="feedbackPatientLocation">Chennai</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="container btmSpace">
+          <div className="row">
+            <div className="col-12 position-relative">
+              <div className="feedBackCircle">
+                {/* <img src={feedbackQuote}/> */}
+                {/* <img className="quoteImage" src={globe}/> */}
+                <img className="quoteImage" src={doubleQuotes}/>
               </div>
               <div className="feedbackContainer">
                 <p className="feedBackTitle">Very helpful.</p>
@@ -91,36 +127,8 @@ const FeedBack = () => {
             <div className="col-12 position-relative">
               <div className="feedBackCircle">
                 {/* <img src={feedbackQuote}/> */}
-              </div>
-              <div className="feedbackContainer">
-                <p className="feedBackTitle">Very helpful.</p>
-                <p className="feedBackParagraph">
-                  Far easier than doing same things on computer. Allows quick
-                  and easy search with speedy booking. Even maintains history of
-                  doctors visited
-                </p>
-                <div className="mx-3 dividerContianer">
-                  <hr />
-                </div>
-                <div className="d-flex ms-3 PatientData">
-                  <div className="feedbackPaitentImage">
-                    <img className="mx-auto rounded-circle" src={feedback1} />
-                  </div>
-                  <div>
-                    <p className="feedbackPaitentName">Indhuja</p>
-                    <p className="feedbackPatientLocation">Chennai</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="row">
-            <div className="col-12 position-relative">
-              <div className="feedBackCircle">
-                {/* <img src={feedbackQuote}/> */}
+                {/* <img className="quoteImage" src={globe}/> */}
+                <img className="quoteImage" src={doubleQuotes}/>
               </div>
               <div className="feedbackContainer">
                 <p className="feedBackTitle">Very helpful.</p>

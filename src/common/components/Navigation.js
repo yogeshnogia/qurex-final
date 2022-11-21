@@ -6,6 +6,10 @@ import { Menu, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { useSelector, useDispatch } from 'react-redux';
 import { emptyAuth } from '../../state/auth/Actions';
+import getHelp from '../../assets/svgs/gethelp.svg';
+import ellipse from '../../assets/svgs/ellipse.svg';
+import callIcon from '../../assets/svgs/callicon.svg';
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
@@ -45,8 +49,8 @@ const Navigation = () => {
             </Nav>
             <Nav className="col-lg-4 justify-content-around">
               <Nav.Link href="#deets">
-                <span>
-                  <img src="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIuSURBVHgBvVXBbtNAEJ0ZO4lrySUpjUQbpJ44oN4QcOTCD8AFiQOBUy" />
+                {/*<span>
+                   <img src="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIuSURBVHgBvVXBbtNAEJ0ZO4lrySUpjUQbpJ44oN4QcOTCD8AFiQOBUy" />
                 </span>
                 <button
                   type="button"
@@ -56,12 +60,17 @@ const Navigation = () => {
                   <span className="position-absolute top-0 start-100 translate-middle p-2 bg-warning border border-light rounded-circle">
                     <span className="visually-hidden">New</span>
                   </span>
-                </button>
+                </button>*/}
+
+                <img src={ellipse} />
               </Nav.Link>
               <Nav.Link href="">
-                <img src="https://quer.vercel.app/static/media/robosv.66b65f9b07ca6cb5cd17a903bd35ca53.svg" />
+                {/* <img src="https://quer.vercel.app/static/media/robosv.66b65f9b07ca6cb5cd17a903bd35ca53.svg" /> */}
+                <img src={getHelp} />
               </Nav.Link>
-
+              <Nav.Link href="">
+                <img src={callIcon} />
+              </Nav.Link>
               <Nav.Link>
                 <Menu as="div" className="relative inline-block text-left">
                   <div>

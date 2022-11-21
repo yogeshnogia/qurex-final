@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 // import querxLogo from '../../assets/svgs/querxLogo.svg';
 import robot from '../../assets/svgs/robot.svg';
 import navBadge from '../../assets/svgs/newBadge.svg';
+import getHelp from '../../assets/svgs/gethelp.svg';
+import ellipse from '../../assets/svgs/ellipse.svg';
+import callIcon from '../../assets/svgs/callicon.svg';
 
 const Navigation = () => {
   return (
@@ -25,7 +28,7 @@ const Navigation = () => {
             <Nav className="col-lg-4 justify-content-around">
               <Nav.Link href="#deets" className="d-flex">
                 {/* <img src={hbVector} style={{height:"fit-content"}} className="mt-2" /> */}
-                <button
+                {/* <button
                   type="button"
                   className="btn bg-light position-relative btn-sm"
                 >
@@ -34,10 +37,14 @@ const Navigation = () => {
                     className="position-absolute top-1 start-100 translate-middle"
                     src={navBadge}
                   />
-                </button>
+                </button> */}
+                <img src={ellipse} />
               </Nav.Link>
               <Nav.Link>
-                <img src={robot} />
+                <img src={getHelp} />
+              </Nav.Link>
+              <Nav.Link>
+                <img src={callIcon} />
               </Nav.Link>
               <Nav.Link>
                 <Link to="/login">

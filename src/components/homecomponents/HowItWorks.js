@@ -2,7 +2,7 @@ import React from 'react';
 import workCard1 from '../../assets/svgs/workCard1.svg';
 //import workCard2 from '../../assets/svgs/workCard2.svg'
 //import workCard3 from '../../assets/svgs/workCard3.svg';
-
+import '../../styles/home.css';
 const HowItWorks = () => {
   return (
     <div className="container-fluid howItWorksContainer">
@@ -34,7 +34,7 @@ const HowItWorks = () => {
           </div>
 
           <div className="col-12 col-lg-3 workCard">
-            {/* <img src={workCard2} className="workCardImg"/> */}
+            <img src={workCard1} className="workCardImg"/>
             <p className="workCardTitle">Consult your sexologist</p>
             <p className="workCardText">
               Consult your sexologist from privacy of your home sexologist There
@@ -43,7 +43,7 @@ const HowItWorks = () => {
           </div>
 
           <div className="col-12 col-lg-3 workCard">
-            {/* <img src={workCard3} className="workCardImg" /> */}
+            <img src={workCard1} className="workCardImg" />
             <p className="workCardTitle">Follow a personalized treatment </p>
             <p className="workCardText">
               Consult your sexologist from privacy of your home sexologist There

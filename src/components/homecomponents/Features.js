@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import cardimage1 from '../../assets/pngs/cardImage1.png';
 import cardImage2 from '../../assets/pngs/cardImage2.png';
 import cardImage3 from '../../assets/pngs/cardImage3.png';
+import '../../styles/home.css';
 // import cardImage4 from "../../assets/pngs/cardImage4.png";
 
 const Features = () => {
@@ -12,7 +13,7 @@ const Features = () => {
     infinite: false,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 4,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
@@ -122,7 +123,7 @@ const Features = () => {
               tabindex="0"
             >
               <Slider {...settings} className="mb-5">
-                <div className="CardContainer">
+                <div className="CardContainer featureCard">
                   <div className="card">
                     <img
                       src={cardimage1}
@@ -138,7 +139,7 @@ const Features = () => {
                   </div>
                 </div>
 
-                <div className="CardContainer">
+                <div className="CardContainer featureCard">
                   <div className="card">
                     <img
                       src={cardImage2}
@@ -153,7 +154,7 @@ const Features = () => {
                   </div>
                 </div>
 
-                <div className="CardContainer">
+                <div className="CardContainer featureCard">
                   <div className="card">
                     <img
                       src={cardImage3}
@@ -171,12 +172,12 @@ const Features = () => {
                   </div>
                 </div>
 
-                <div className="CardContainer">
+                <div className="CardContainer featureCard">
                   <div className="card">
-                    {/* <img
-                      src={cardImage4}
+                    <img
+                      src={cardimage1}
                       className="card-img-top featureCardImage"
-                    /> */}
+                    /> 
                     <div className="card-body">
                       <h3 className="featureCardTitle">Male Infertility</h3>
                       <p className="featureCardText">

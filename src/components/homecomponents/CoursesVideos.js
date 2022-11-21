@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsFillStarFill, BsStar } from 'react-icons/bs';
 import { BiRupee } from 'react-icons/bi';
+import star from '../../assets/star.png';
 import courseImage1 from '../../assets/pngs/courseImage1.png';
 import courseImage2 from '../../assets/pngs/courseImage2.png';
 //import star from '../../assets/svgs/star.svg';
@@ -79,7 +80,7 @@ const CoursesVideos = () => {
               <div className="card-body">
                 <div className="rating d-flex">
                   {/* <img src={star} /> */}
-                  <span className="mx-1">4.2</span>
+                  <span className="mx-1"><BsFillStarFill color="#FEB422" className="imgStar" /> 4.2</span>
                 </div>
                 <p className="CourseDataTitle text-wrap">
                   Quit Looking at Pornography Break..
@@ -117,7 +118,7 @@ const CoursesVideos = () => {
               <div className="card-body">
                 <div className="rating d-flex">
                   {/* <img src={star} /> */}
-                  <span className="mx-1">4.2</span>
+                  <span className="mx-1"><BsFillStarFill color="#FEB422" className="imgStar" /> 4.2</span>
                 </div>
                 <p className="CourseDataTitle text-wrap">
                   Quit Looking at Pornography Break..
@@ -159,7 +160,7 @@ const CoursesVideos = () => {
                 <div className="card-body">
                   <div className="rating d-flex">
                     {/* <img src={star} /> */}
-                    <span className="mx-1">4.2</span>
+                    <span className="mx-1"><BsFillStarFill color="#FEB422" className="imgStar" /> 4.2</span>
                   </div>
                   <p className="CourseDataTitle text-wrap">
                     Quit Looking at Pornography Break..
@@ -197,7 +198,7 @@ const CoursesVideos = () => {
                 <div className="card-body">
                   <div className="rating d-flex">
                     {/* <img src={star} /> */}
-                    <span className="mx-1">4.2</span>
+                    <span className="mx-1"><BsFillStarFill color="#FEB422" className="imgStar" /> 4.2</span>
                   </div>
                   <p className="CourseDataTitle text-wrap">
                     Quit Looking at Pornography Break..
