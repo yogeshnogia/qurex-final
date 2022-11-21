@@ -2,7 +2,7 @@ import moment from 'moment/moment';
 import React, { useEffect, useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { get, headers, post } from '../api';
 import { BaseSetting } from '../utils/common';
 import '../styles/Confirm.css';
@@ -16,6 +16,8 @@ const Consult = () => {
   let authData = auth?.data;
   const drDetail = useSelector((state) => state.drDetail);
   let drDetailData = drDetail?.data;
+  const currentDate = new Date();
+
 
   useEffect(() => {
     getData();
@@ -147,7 +149,7 @@ const Consult = () => {
       <div className="innerconsult">
         <div className="conleft">
           <div className="inconleft">
-            <span className="slot"> Available Slots</span>
+            <span className="slot"> Available - Slots</span>
             <span className="gryline"></span>
             <div className="mt-3 timings">
               <div className="grid grid-cols-3 gap-4 topt">
@@ -178,10 +180,11 @@ const Consult = () => {
         </div>
 
         <div className="conright">
-          <Calendar onChange={changeSelectedDate} value={new Date()} />
+          <Calendar minDate={new Date()} onChange={changeSelectedDate} value={new Date()} />
+
 
           <div className="bitdiv">
-            <button className="back shadow-md hover:shadow-2xl duration-500 ease-in-out">
+            <button onClick={() => navigate(-1)} className="back shadow-md hover:shadow-2xl duration-500 ease-in-out">
               Back
             </button>
             <button
@@ -191,6 +194,7 @@ const Consult = () => {
               Book now
             </button>
           </div>
+          
         </div>
       </div>
     </section>
